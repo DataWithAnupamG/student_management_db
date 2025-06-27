@@ -1,6 +1,6 @@
 # 🎓 Student Management Database Schema
 
-A professional-grade SQL schema designed to manage academic data like student records, courses, attendance, exams, and grading systems.
+This repository includes a fully modular, professional PostgreSQL schema for managing a university/college academic database, extended with triggers, views, audit logging, and more.
 
 ## 📌 Features
 
@@ -8,6 +8,11 @@ A professional-grade SQL schema designed to manage academic data like student re
 - Referential integrity through `FOREIGN KEY` constraints
 - Input validation using `CHECK` constraints
 - Compatible with PostgreSQL (easily portable to others)
+- Modular SQL schema (students, courses, attendance, exams)
+- Triggers to auto-assign grades
+- Views for student-course summaries and attendance analytics
+- Audit logging framework
+- pgvector support for AI-based semantic search
 
 ## 📁 Folder Structure
 
@@ -21,6 +26,9 @@ schema/
 ├── 06_create_exam_scores.sql
 ├── 07_create_internal_marks.sql
 └── 08_create_final_grades.sql
+├── 09_create_views.sql
+├── 10_triggers.sql
+└── 11_audit_log.sql
 ```
 
 ## 🚀 Getting Started
